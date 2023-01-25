@@ -3,5 +3,4 @@ Instructor : Maximillian
 Platform : Udemy.com
 
 ## Assignments
-<!-- * ### [Assignment 1] (./Assignment1/) -->
-* ## [View Website](./Assignment1/)
+* ### [View Website](./Assignment1/)
