@@ -7,15 +7,9 @@ import {Component} from "@angular/core";
 export class Section1Component {
   isSecretVisible:boolean = false;
   buttonClicks:number[] = [];
-  index:number = 1;
   toggleSecretVisibility () {
-    if (this.isSecretVisible) this.isSecretVisible = false;
-    else this.isSecretVisible = true;
-    this.buttonClicks.push(this.index);
-    this.index++;
-  }
-  determineBackgroundColor () {
-    return (this.index >= 6) ? 'blue' : 'transparent';
+    this.isSecretVisible = !this.isSecretVisible;
+    this.buttonClicks.push(this.buttonClicks.length + 1);
   }
 }
 
