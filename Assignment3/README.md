@@ -53,6 +53,38 @@ export class Section1Component {
 }
 ```
 
+
+
+
+### 6- Using Date as item of the array , using index of the array
+- [section1.component.html](./src/app/section1/section1.component.html)
+```
+<ul>
+  <li *ngFor="let click of buttonClicks; let i = index;">
+    <span
+      [ngStyle]="{ 'background-color': i >= 4 ? 'blue' : 'transparent' }"
+      [ngClass]="{ 'white-text': i >= 4 }"
+      >{{ click }}</span
+    >
+  </li>
+</ul>
+```
+
+- [section1.component.ts](./src/app/section1/section1.component.ts)
+```
+export class Section1Component {
+  isSecretVisible:boolean = false;
+  buttonClicks:Date[] = [];
+  toggleSecretVisibility () {
+    this.isSecretVisible = !this.isSecretVisible;
+    this.buttonClicks.push(new Date());
+  }
+}
+```
+
+
+
+
 💙 You can view my different projects and contact me through my [Website📱](https://karimali.vercel.app/) 💙
 
 

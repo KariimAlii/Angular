@@ -27,10 +27,10 @@
       </button>
       <p *ngIf="isSecretVisible">Secret Password = tuna</p>
       <ul>
-        <li *ngFor="let click of buttonClicks">
+        <li *ngFor="let click of buttonClicks; let i = index;">
           <span
-            [ngStyle]="{ 'background-color': click >= 5 ? 'blue' : 'transparent' }"
-            [ngClass]="{ text: click >= 5 }"
+            [ngStyle]="{ 'background-color': i >= 4 ? 'blue' : 'transparent' }"
+            [ngClass]="{ 'white-text': i >= 4 }"
             >{{ click }}</span
           >
         </li>

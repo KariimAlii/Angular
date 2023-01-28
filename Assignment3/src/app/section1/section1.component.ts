@@ -6,10 +6,10 @@ import {Component} from "@angular/core";
 })
 export class Section1Component {
   isSecretVisible:boolean = false;
-  buttonClicks:number[] = [];
+  buttonClicks:Date[] = [];
   toggleSecretVisibility () {
     this.isSecretVisible = !this.isSecretVisible;
-    this.buttonClicks.push(this.buttonClicks.length + 1);
+    this.buttonClicks.push(new Date());
   }
 }
 
