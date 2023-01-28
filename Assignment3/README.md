@@ -5,6 +5,9 @@
 
 - Crearing Angular Components ✔️
 - Using String Interpolation , Event Binding , Two-Way Data Binding  ✔️
+- Dynamic HTML using Directives ✔️
+- Using Structural Directives *ngIf , *ngFor ✔️
+- Using Attribute Directives ngStyle , ngClass ✔️
 
 ## 🔥 Steps
 
