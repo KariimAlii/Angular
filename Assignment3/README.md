@@ -57,6 +57,7 @@ export class Section1Component {
 
 
 ### 6- Using Date as item of the array , using index of the array
+![](./output2.JPG)
 - [section1.component.html](./src/app/section1/section1.component.html)
 ```
 <ul>
